@@ -126,14 +126,19 @@ img {
     padding: 1rem;
   }
 
-.me{
-  text-align: justify;;
+.me {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  text-align: justify;
 }
 
 .me img {
-    float: right;
-    margin: 1rem;
-  }
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 0;
+  flex-shrink: 0;
+}
 
 .country {
   display: grid;
@@ -157,7 +162,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: top;
-  height: 80%;
+  margin-top: 1rem;
 }
 
 .highlight {
