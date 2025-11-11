@@ -42,8 +42,6 @@ h1 {
   border: none;
   padding: 0 .5rem;
   cursor: pointer;
-  position: absolute;
-  top: 0;
   right: 1rem;
 }
 
@@ -64,7 +62,6 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 1rem 1.5rem;
-  display: none;
   font-size: 2rem;
 }
 
@@ -75,12 +72,16 @@ nav a:active {
 }
 
 nav a:hover~#navmenu~#hambutton {
-  background-color: var(---yellow);
+  background-color: var(--yellow);
   color: #000;
 }
 
 nav.show {
   width: 100%;
+}
+
+nav:not(.show) {
+  display: none;
 }
 
 h1.show {
@@ -110,7 +111,7 @@ h2 {
 
 .res-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 
