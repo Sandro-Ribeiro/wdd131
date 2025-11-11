@@ -112,12 +112,9 @@ main img {
 }
 
 h2 {
-  background-color: var(--indigo-dye);
-  color: white;
+  color:var(--indigo-dye);
   text-align: left;
-  margin-bottom: 1rem;
-  padding: 1rem 1rem;
-
+  margin: 2rem 1rem 1rem 0;
 }
 
 .res-grid {
@@ -133,6 +130,9 @@ figure {
 figcaption {
   text-align: center;
   color: var(--purple);
+  font-style: italic;
+  font-size: 1rem;
+  padding: 0.5rem 0;
 }
 
 footer {
