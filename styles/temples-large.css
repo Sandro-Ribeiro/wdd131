@@ -9,6 +9,7 @@
   }
 
   nav {
+    display: flex !important;
     flex-direction: row;
     justify-content: flex-end;
   }
