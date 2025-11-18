@@ -20,6 +20,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1.5rem;
+  background-color: var(--green);
 }
 
 h1 {
@@ -27,7 +28,7 @@ h1 {
 }
 
 aside {
-  background-color: var(--green);
+  background-color: var(--red);
   padding: .5rem;
 }
 
