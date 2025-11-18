@@ -21,9 +21,11 @@
   </header>
   <aside></aside>
   <main>
-    <picture>
-      <source srcset="images/countrypage/cerrado_mineiro.jpg" media="(min-width: 750px)">
-      <img src="images/countrypage/azulao.webp" alt="Azulao = Heroes" width="320" height="480">
+    <picture class="hero-fit">
+      <source media="(min-width: 1500px )" srcset="images\countrypage/rola_Moca.webp">
+      <source media="(min-width: 1000px)" srcset="images/countrypage/cerrado_mineiro.webp">
+      <source media="(min-width: 750px)" srcset="images/countrypage/serra_canastra.webp">
+      <img src="images/countrypage/azulao.webp" alt="Azulao = Heroes" width="320px" height="780px"  >
     </picture>
     <section class="card info">
       <h2>Data</h2>
@@ -38,7 +40,6 @@
         <span class="label">Internet TLD:</span><span class="value">.mg</span>
       </div>
     </section>
-
     <section class="card weather">
       <h2>Weather</h2>
       <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" id="weather-icon">
@@ -121,11 +122,8 @@
         <span class="label">Wind:</span><span class="value">5 km/h</span>
         <span class="label">Wind Chill:</span><span class="value" id="wcf"></span>
       </div>
-
     </section>
-
   </main>
-
   <footer>
     <p><span id="currentYear"></span> Sandro Ribeiro - Minas Gerais - Brazil</p>
     <p class="highlight" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>

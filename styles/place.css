@@ -1,5 +1,5 @@
 :root {
-  --red: rgb(99, 122, 95);
+  --red:rgb(99, 122, 95);
   --green: rgb(67, 75, 65);
 }
 
@@ -34,6 +34,11 @@ aside {
 img {
   width: 100%;
   height: auto;
+}
+
+.hero-fit img {
+  max-height: 77vh;
+  object-fit: cover;
 }
 
 h2 {
@@ -84,7 +89,7 @@ h2 {
   fill: #f8b62d;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
 
   h1 {
     font-size: 3rem;
@@ -131,5 +136,3 @@ h2 {
     display: none;
   }
 }
-
-/* ✅ CORREÇÃO: A chave extra '}' foi removida daqui */
