@@ -16,6 +16,46 @@ function toggleActive(element) {
 
 const temples = [
   {
+    templeName: "São Paulo Brazil",
+    location: "São Paulo, Brazil",
+    dedicated: "1978, November, 2",
+    area: 59246,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/sao-paulo-brazil-temple/sao-paulo-brazil-temple-46816.jpg"
+  },
+  {
+    templeName: "Campinas Brazil",
+    location: "Campinas, Brazil",
+    dedicated: "2002, May, 17",
+    area: 48100,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-6013.jpg"
+  },
+  {
+    templeName: "Recife Brazil",
+    location: "Recife, Brazil",
+    dedicated: "2000, December, 15",
+    area: 37200,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-43758.jpg"
+  },
+  {
+    templeName: "Manaus Brazil",
+    location: "Manaus, Brazil",
+    dedicated: "2012, June, 10",
+    area: 32032,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/manaus-brazil-temple/manaus-brazil-temple-3918.jpg"
+  },
+  {
+    templeName: "Belo Horizonte Brazil",
+    location: "Belo Horizonte, Brazil",
+    dedicated: "2023, June, 17",
+    area: 27000,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/belo-horizonte-brazil-temple/belo-horizonte-brazil-temple-64611.jpg"
+  },
+  {
     templeName: "Aba Nigeria",
     location: "Aba, Nigeria",
     dedicated: "2005, August, 7",
@@ -71,13 +111,69 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   }
-
 ];
 
-createTempleCard();
+function filterTemples(filtertype) {
 
-function createTempleCard() {
-  temples.forEach(temple => {
+  let templeList;
+
+  switch (filtertype) {
+
+    case "home":
+      templeList = temples;
+      document.querySelector('h2').textContent = 'Home';
+      break;
+    case "old":
+      templeList = temples.filter(temple => new Date(temple.dedicated) < new Date("1900-01-01"));
+      document.querySelector('h2').textContent = 'Old Temples';
+      break;
+    case "new":
+      templeList = temples.filter(temple => new Date(temple.dedicated) >= new Date("2000-01-01"));
+      document.querySelector('h2').textContent = 'New Temples';
+      break;
+    case "large":
+      templeList = temples.filter(temple => temple.area >= 90000);
+      document.querySelector('h2').textContent = 'Large Temples';
+      break;
+    case "small":
+      templeList = temples.filter(temple => temple.area < 10000);
+      document.querySelector('h2').textContent = 'Small Temples';
+      break;
+    default:
+      templeList = temples;
+  }
+
+  createTempleCard(templeList)
+
+}
+
+const navMenu = document.querySelector('#navmenu');
+
+navMenu.addEventListener('click', (event) => {
+
+  event.preventDefault();
+
+  const clickedElement = event.target;
+
+  if (clickedElement.tagName === 'A' && clickedElement.hasAttribute('data-filter')) {
+
+    document.querySelectorAll('#navmenu a').forEach(link => { link.classList.remove('active'); });
+    clickedElement.classList.add('active');
+
+    const filter = clickedElement.getAttribute('data-filter');
+    filterTemples(filter);
+  } 
+
+});
+
+filterTemples('home');
+
+function createTempleCard(filteredTemples) {
+
+  const cardsContainer = document.querySelector(".res-grid");
+  cardsContainer.innerHTML = '';
+
+  filteredTemples.forEach(temple => {
     let card = document.createElement("section");
     let name = document.createElement("h3");
     let location = document.createElement("p");
@@ -92,6 +188,8 @@ function createTempleCard() {
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
     img.setAttribute("loading", "lazy");
+    img.setAttribute("width", "400"); 
+    img.setAttribute("height", "250");
 
     card.appendChild(name);
     card.appendChild(location);
@@ -101,4 +199,4 @@ function createTempleCard() {
 
     document.querySelector(".res-grid").appendChild(card);
   });
-  }
+ }

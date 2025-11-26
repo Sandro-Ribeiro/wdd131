@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
+  <meta name="author" content="Sandro Ribeiro">
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals - W02 Assignment: Picture Album">
+  <title>WDD 131 - Dynamic Web Fundamentals - Temple Album - Sandro Ribeiro</title>
   <link rel="stylesheet" href="styles/filtered-temples.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
@@ -19,24 +20,20 @@
     <h1 class="handler">Temple Album</h1>
     <a href="#" id="hambutton"></a>
     <nav id="navmenu">
-      <a href="#" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
+      <a href="#" data-filter="home" onclick="toggleActive(this)" ontouchstart="toggleActive(this)">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
     </nav>
   </header>
-
   <main>
     <h2>Home</h2>
     <div class="res-grid">
-
     </div>
-
   </main>
-
   <footer>
-    <p><span id="currentYear"></span> 🌺 Rubia Magdelena Francesco 🌺 Madagascar</p>
+    <p><span id="currentYear"></span> Sandro Ribeiro</p>
     <p class="smaller" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
   </footer>
 </body>
