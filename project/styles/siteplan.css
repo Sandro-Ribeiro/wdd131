@@ -1,0 +1,87 @@
+/*
+ * W05 Project: Website Planning Document CSS (plan.css)
+ * Colors: #434B41 (Primary), #637A5F (Secondary), #D7D7D5 (Background)
+ * Font: Lato (Sans-serif)
+ */
+
+/* 1. CSS VARIABLES (Custom Properties) */
+:root {
+    --color-primary: #434B41;
+    --color-secondary: #637A5F;
+    --color-text-light: #FFFFFF;
+    --color-background-light: #D7D7D5;
+    --content-max-width: 900px;
+    /* Limits the width of the main content container */
+}
+
+/* 2. GENERAL BASE AND TYPOGRAPHY */
+body {
+    background-color: var(--color-background-light);
+    color: #333;
+    /* Dark text for light background */
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 3. STRUCTURE AND HEADER */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* 4. MAIN CONTENT */
+main {
+    max-width: var(--content-max-width);
+    margin: 2rem auto;
+    /* Centers the content block */
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* 5. EMPHASIS (strong) */
+strong {
+    font-weight: 700;
+    color: var(--color-secondary);
+    /* Uses the accent color for emphasis */
+}
+
+/* 6. WIREFRAME IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px dashed var(--color-primary);
+    margin: 1rem 0;
+    display: block;
+}
+
+/* 7. FOOTER */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+}

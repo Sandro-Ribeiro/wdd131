@@ -15,12 +15,56 @@ body {
   background-color: var(--red);
 }
 
-header,
-footer {
+header{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
   color: white;
   text-align: center;
   padding: 1.5rem;
   background-color: var(--green);
+}
+
+header img{
+  width: 400px;
+  height: auto;
+}
+
+nav{
+  margin-left: auto;
+}
+
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  /*display: none;*/
+  font-size: 1.5rem;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+nav a:hover~#navmenu~#hambutton {
+  background-color: var(--yellow);
+  color: #000;
+}
+
+nav.show {
+  width: 100%;
 }
 
 h1 {
@@ -32,6 +76,13 @@ aside {
   padding: .5rem;
 }
 
+footer {
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--green);
+}
+
 img {
   width: 100%;
   height: auto;
@@ -40,6 +91,41 @@ img {
 .hero-fit img {
   max-height: 77vh;
   object-fit: cover;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #637A5F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Estilo hover para os links do dropdown */
+.dropdown-content a:hover {
+  background-color: #434B41;
+  /* Cor Primária (Dark Olive Green) */
 }
 
 h2 {
