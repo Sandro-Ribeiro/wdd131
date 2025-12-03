@@ -7,7 +7,6 @@
     <meta
       name="description"
       content="WDD 131 Dynamic Web Fundamentals - Product Review Form - Sandro Ribeiro">
-    <meta name="author" content="Sandro Ribeiro">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,6 +27,7 @@
           <label for="product_name">Product Name</label>
           <select id="product_name" name="product_name" required>
             <option value="" selected disabled>Choose a Product ...</option>
+            <option value="test-product" disabled>Product for Audit</option>
           </select>
         </div>
         <div class="item">
@@ -76,12 +76,9 @@
           </div>
         </div>
         <div class="item">
-          <label
-            >Date of Installation
-            <input type="date" id="install" name="install" required
-          /></label>
+          <label for="install">Date of Installation</label>
+          <input type="date" id="install" name="install" required>
         </div>
-
         <div class="item">
           <p>
             Which features did you find useful in the product?<br />
