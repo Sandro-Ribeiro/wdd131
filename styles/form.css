@@ -109,8 +109,6 @@ textarea {
   width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   gap: 10px;
-  align-items: space-around;
-  justify-items: center;
 }
 
 .page-container {
