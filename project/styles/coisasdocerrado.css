@@ -24,6 +24,12 @@ footer {
   margin: 0 auto;
 }
 
+main section {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -34,7 +40,7 @@ header {
 }
 
 header img {
-  width: 400px;
+  width: 150px;
   height: auto;
 }
 
@@ -84,6 +90,16 @@ footer {
   text-align: center;
   padding: 1.5rem;
   background-color: var(--greenDark);
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #dddddd;
+  text-decoration: underline;
 }
 
 h1 {
@@ -258,7 +274,7 @@ nav {
 }
 
 nav.open {
-  display: block;
+  display: block !important;
 }
 
 nav ul {
@@ -268,7 +284,6 @@ nav ul {
 
 nav a {
   display: block;
-
 }
 
 /* Biodiversity pages */
@@ -315,7 +330,7 @@ nav a {
 .biogrid {
   display: grid;
   grid-gap: 1rem;
-  text-align: center;
+  text-align: right;
 }
 
 .biogrid h2 {
@@ -566,6 +581,10 @@ references main{
     position: relative;
   }
 
+  header img {
+    width: 400px;
+  }
+
   .card {
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 2rem #000;
@@ -603,7 +622,6 @@ references main{
     display: none;
   }
 
-
   #menu-toggle {
     display: none;
   }
@@ -624,9 +642,7 @@ references main{
     position: relative;
   }
 
-  .biogrid{
+  .biogrid {
     grid-template-columns: 1fr 1fr;
   }
-
 }
-

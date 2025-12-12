@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coisas do Cerrado</title>
+    <title>Economic - Coisas do Cerrado</title>
     <meta
       name="description"
       content="WDD 131 Dynamic Web Fundamentals - W06 Project - Sandro Ribeiro"
@@ -20,9 +20,23 @@
   </head>
   <body>
     <header>
-      <img src="./images/logos/logo-large.webp" alt="Logo from site - Coisas do Cerrado" />
-      <button id="menu-toggle" aria-expanded="false" aria-label="Open Navigation Menu">
-        &#9776; </button>
+      <picture>
+        <source
+          media="(max-width: 749px)"
+          srcset="./images/logos/logo-small.webp"
+        />
+        <img
+          src="./images/logos/logo-large-line.webp"
+          alt="Logo Coisas do Cerrado"
+        />
+      </picture>
+      <button
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-label="Open Navigation Menu"
+      >
+        &#9776;
+      </button>
       <nav id="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -41,7 +55,10 @@
     <aside></aside>
     <main>
       <div class="hero">
-        <img src="images/economy/economy-soja.webp" alt="rafting11_1024" />
+        <img
+          src="images/economy/economy-soja.webp"
+          alt="Plantação de Soja no Cerrado"
+        />
         <article>
           <h1>SOYBEAN is expanding across the Cerrado</h1>
         </article>
@@ -52,11 +69,11 @@
           <p>
             Soybean cultivation is expanding significantly in the Brazilian
             Cerrado, transforming pastures and areas of native vegetation into
-            cropland, with growth exceeding 1400% between 1985 and 2021,ccupying
-            approximately 10% of the biome. This generates environmental and
-            social concerns, especially in regions like Matopiba, despite
-            sustainability efforts and monitoring of expansion in consolidated
-            areas. <br />
+            cropland, with growth exceeding 1400% between 1985 and 2021,
+            occupying approximately 10% of the biome. This generates
+            environmental and social concerns, especially in regions like
+            Matopiba, despite sustainability efforts and monitoring of expansion
+            in consolidated areas. <br />
             The area planted with soybeans in the Cerrado increased by 49%
             between 2013/14 and 2022/23, reaching 23.15 million hectares (50.1%
             of the national soybean production). <br />
@@ -66,13 +83,14 @@
             MapBiomas. The advance of soybean cultivation is one of the main
             drivers of deforestation and degradation of the Cerrado, a biome
             rich in biodiversity, with impacts on rainfall patterns and water
-            resources,warns the agency.
+            resources, warns the agency.
           </p>
           <figure>
             <div>
               <img
                 src="images/economy/economy-graph-soja.webp"
-                alt="rafting11_1024"
+                alt="Gráfico de produção de Soja no Cerrado"
+                loading="lazy"
               />
             </div>
             <figcaption>Soybean production in millions of tons</figcaption>
@@ -85,23 +103,33 @@
           <figure>
             <img
               src="images/economy/pecuaria-yurika-hidaka.webp"
-              alt="rafting65"
+              alt="Gado de corte no Cerrado"
+              loading="lazy"
             />
             <figcaption>Beef Catlle</figcaption>
           </figure>
           <figure>
-            <img src="images/economy/economy-img1.webp" alt="rafting52" />
+            <img
+              src="images/economy/economy-img1.webp"
+              alt="Agricultura Familiar"
+              loading="lazy"
+            />
             <figcaption>Family farming</figcaption>
           </figure>
           <figure>
             <img
               src="images/economy/economy-castanhadobaru.webp"
-              alt="rafting32"
+              alt="Castanha do Baru, produto nativo"
+              loading="lazy"
             />
             <figcaption>Native chestnuts (Baru)</figcaption>
           </figure>
           <figure>
-            <img src="images/economy/economy-pequi.webp" alt="rafting19" />
+            <img
+              src="images/economy/economy-pequi.webp"
+              alt="Fruto de Pequi"
+              loading="lazy"
+            />
             <figcaption>Pequi</figcaption>
           </figure>
         </div>

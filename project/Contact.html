@@ -1,61 +1,159 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coisas do Cerrado</title>
-  <meta name="description" content="WDD 131 Dynamic Web Fundamentals - W06 Project - Sandro Ribeiro" />
-  <meta name="author" content="Sandro Ribeiro" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Great+Vibes&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles/coisasdocerrado.css" />
-  <script defer src="scripts/coisasdocerrado.js"></script>
-</head>
-<body>
-  <header>
-    <img src="./images/logos/logo-large.webp" alt="Logo from site - Coisas do Cerrado" />
-    <button id="menu-toggle" aria-expanded="false" aria-label="Open Navigation Menu">
-      ☰ </button>
-    <nav id="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Biodiversity</a>
-          <ul class="dropdown-content">
-            <li><a href="plant-diversity.html">Plants</a></li>
-            <li><a href="animal-diversity.html">Animals</a></li>
-          </ul>
-        </li>
-        <li><a href="economy.html">Economic</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <aside></aside>
-  <main>
-    <h1>Contact Us</h1>
-    <section class="team-section">
-      <h2>Our Team</h2>
-      <div class="team-grid grid1" id="team-profiles">
-      </div>
-    </section>
-    <section>
-      <div class="contact grid">
-        <div>
-          <h2>Our contacts</h2>
-          <p>Coisas do Cerrado</p>
-          <p>Address: Uberaba - MG</p>
-          <p>Phone: 999-999-9999</p>
-          <p>Email: <a href="mailto">contact@coisasdocerrado.com</a></p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - Coisas do Cerrado</title>
+    <meta
+      name="description"
+      content="WDD 131 Dynamic Web Fundamentals - W06 Project - Sandro Ribeiro"
+    />
+    <meta name="author" content="Sandro Ribeiro" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/coisasdocerrado.css" />
+    <script defer src="scripts/coisasdocerrado.js"></script>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source
+          media="(max-width: 749px)"
+          srcset="./images/logos/Logo-small.webp"
+        />
+
+        <img
+          src="./images/logos/Logo-large-line.webp"
+          alt="Logo Coisas do Cerrado"
+        />
+      </picture>
+      <button
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-label="Open Navigation Menu"
+      >
+        &#9776;
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Biodiversity</a>
+            <ul class="dropdown-content">
+              <li><a href="plant-diversity.html">Plants</a></li>
+              <li><a href="animal-diversity.html">Animals</a></li>
+            </ul>
+          </li>
+          <li><a href="economy.html">Economic</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside></aside>
+    <main>
+      <h1>Contact Us</h1>
+      <section class="team-section">
+        <h2>Our Team</h2>
+        <div id="team-profiles"></div>
+      </section>
+      <section>
+        <div class="contact grid">
           <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11461.51572717681!2d-52.16566704001635!3d-15.890835597743342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x936571941779a4f9%3A0xf1dcd5b1425bea5c!2sAntigo%20Iate%20Clube%20da%20Barra!5e0!3m2!1spt-BR!2sbr!4v1729361358382!5m2!1spt-BR!2sbr"
-              width="600" height="450" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Our contacts</h2>
+            <p>Coisas do Cerrado</p>
+            <p>Address: Uberaba - MG</p>
+            <p>Phone: 999-999-9999</p>
+            <p>
+              Email:
+              <a href="mailto:contact@coisasdocerrado.com"
+                >contact@coisasdocerrado.com</a
+              >
+            </p>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11461.51572717681!2d-52.16566704001635!3d-15.890835597743342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x936571941779a4f9%3A0xf1dcd5b1425bea5c!2sAntigo%20Iate%20Clube%20da%20Barra!5e0!3m2!1spt-BR!2sbr!4v1729361358382!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div>
+            <h2>Send Us a Message</h2>
+            <form method="get" action="review.html">
+              <fieldset>
+                <legend>Contact information</legend>
+                <div class="form-item column2">
+                  <label for="fullname">Full name:</label>
+                  <input type="text" id="fullname" name="fullname" required />
+                </div>
+                <div class="form-item column2">
+                  <label for="useremail">Email:</label>
+                  <input
+                    type="email"
+                    id="useremail"
+                    name="useremail"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Purpose of the message</legend>
+                <div>
+                  <input
+                    type="radio"
+                    id="GeneralInquiry"
+                    name="purpose"
+                    value="GeneralInquiry"
+                    required
+                  />
+                  <label for="GeneralInquiry">General Inquiry</label><br />
+                  <input
+                    type="radio"
+                    id="ReservationQuestion"
+                    name="purpose"
+                    value="ReservationQuestion"
+                  />
+                  <label for="ReservationQuestion">Reservation Question</label
+                  ><br />
+                  <input
+                    type="radio"
+                    id="WebsiteSuggestion"
+                    name="purpose"
+                    value="WebsiteSuggestion"
+                  />
+                  <label for="WebsiteSuggestion">Website Suggestion</label
+                  ><br /><br />
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Message</legend>
+                <div class="form-item">
+                  <textarea
+                    name="Message"
+                    id="feedback"
+                    rows="4"
+                    placeholder="Write here your message"
+                  ></textarea>
+                </div>
+                <div class="form-item column1">
+                  <input type="checkbox" id="subscribe" name="subscribe" />
+                  <label for="subscribe"
+                    >Please subscribe me to the monthly newsletter</label
+                  >
+                </div>
+              </fieldset>
+              <button type="submit">Submit your message</button>
+            </form>
           </div>
         </div>
+<<<<<<< HEAD
         <div>
           <h2>Send Us a Message</h2>
           <form method="get" action="review.html">
@@ -109,3 +207,18 @@
 </body>
 
 </html>
+=======
+      </section>
+    </main>
+    <footer>
+      <p>
+        <span id="currentYear"></span> Sandro Ribeiro - Minas Gerais - Brazil
+      </p>
+      <p><a href="references.html">Citations and References</a></p>
+      <p class="highlight" id="lastModified">
+        Last Modification: 01/01/1970 12:00:00
+      </p>
+    </footer>
+  </body>
+</html>
+>>>>>>> 392882a76e2ad71272916b2085235f556f83d6a6

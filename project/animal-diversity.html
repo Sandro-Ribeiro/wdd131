@@ -1,153 +1,164 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coisas do Cerrado</title>
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - W06 Project - Sandro Ribeiro" />
+    <title>Cerrado Bird Diversity - Coisas do Cerrado</title>
+    <meta name="description" content="Aves e Fauna do Bioma Cerrado, Brasil." />
     <meta name="author" content="Sandro Ribeiro" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Great+Vibes&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/coisasdocerrado.css" />
     <script defer src="scripts/coisasdocerrado.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="./images/logos/logo-large.webp" alt="Logo from site - Coisas do Cerrado" />
-        <button id="menu-toggle" aria-expanded="false" aria-label="Open Navigation Menu">
-            &#9776; </button>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Biodiversity</a>
-                    <ul class="dropdown-content">
-                        <li><a href="plant-diversity.html">Plants</a></li>
-                        <li><a href="animal-diversity.html">Animals</a></li>
-                    </ul>
-                </li>
-                <li><a href="economy.html">Economic</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+      <picture>
+        <source
+          media="(max-width: 749px)"
+          srcset="./images/logos/logo-small.webp"
+        />
+        <img
+          src="./images/logos/logo-large-line.webp"
+          alt="Logo Coisas do Cerrado"
+        />
+      </picture>
+      <button
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-label="Open Navigation Menu"
+      >
+        &#9776;
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Biodiversity</a>
+            <ul class="dropdown-content">
+              <li><a href="plant-diversity.html">Plants</a></li>
+              <li><a href="animal-diversity.html">Animals</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="economy.html">Economic</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <aside></aside>
     <main>
-        <div class="hero">
-            <img src="images/plant/plant-hero.webp" alt="rafting11_1024" />
-            <article>
-                <h1>BIRDS FROM CERRADO</h1>
-            </article>
+      <div class="hero">
+        <img
+          src="images/plant/plant-hero.webp"
+          alt="Imagem Hero: Fauna do Cerrado"
+        />
+        <article>
+          <h1>BIRDS FROM CERRADO</h1>
+        </article>
+      </div>
+
+      <section>
+        <div class="biogrid">
+          <div>
+            <h2>Currupião (Sofrê)</h2>
+            <p><strong>Nome Científico:</strong> *Icterus jamacaii*</p>
+            <p><strong>Nomes Populares:</strong> João-Galinha, Sofrê</p>
+            <p><strong>Família:</strong> Icteridae</p>
+            <p>
+              O Currupião é um dos pássaros mais bonitos do Cerrado, conhecido
+              por sua plumagem laranja vibrante e canto melodioso. Ele é
+              onívoro, alimentando-se de frutas, néctar, insetos e outros
+              pequenos invertebrados.
+            </p>
+          </div>
+          <figure>
+            <img
+              src="images/animal/currupiao.webp"
+              alt="Pássaro Currupião no Cerrado"
+              loading="lazy"
+            />
+          </figure>
         </div>
-        <section>
-            <div class="biogrid">
-                <div>
-                    <h2>Currupião (Sofrê)</h2>
-                    <p><strong>Nome Botânico:</strong> Tabebuia chrysotricha Standl</p>
-                    <p><strong>Nomes Populares:</strong> ipê amarelo</p>
-                    <p><strong>Família:</strong> Família Bignoniaceae</p>
-                    <p>
-                        <strong>Origem:</strong> Brasil, nos estados do Espírito Santo até
-                        o sul do país
-                    </p>
-                    <p>
-                        Uma das árvores mais bonitas em paisagismo urbano pela sua bela e
-                        exuberante floração. Pode ser cultivada nas ruas e parques e
-                        também em jardins empresariais, para condomínios e residências,
-                        com grande sucesso ornamentalip amarelo. No planejamento de
-                        jardins é preciso não esquecer que sua floração dura pouco tempo,
-                        e seu uso como atração principal na primavera deve ter boa
-                        combinação com as outras plantas.
-                    </p>
-                </div>
-                <figure>
-                    <img src="images/animal/currupiao.webp" alt="trip01" />
-                </figure>
-            </div>
-        </section>
-        <section>
-            <div class="biogrid">
-                <div>
-                    <h2>Cardel (Galo da Campina)</h2>
-                    <p><strong>Nome Botânico:</strong> Tabebuia chrysotricha Standl</p>
-                    <p><strong>Nomes Populares:</strong> ipê amarelo</p>
-                    <p><strong>Família:</strong> Família Bignoniaceae</p>
-                    <p>
-                        <strong>Origem:</strong> Brasil, nos estados do Espírito Santo até
-                        o sul do país
-                    </p>
-                    <p>
-                        Uma das árvores mais bonitas em paisagismo urbano pela sua bela e
-                        exuberante floração. Pode ser cultivada nas ruas e parques e
-                        também em jardins empresariais, para condomínios e residências,
-                        com grande sucesso ornamentalip amarelo. No planejamento de
-                        jardins é preciso não esquecer que sua floração dura pouco tempo,
-                        e seu uso como atração principal na primavera deve ter boa
-                        combinação com as outras plantas.
-                    </p>
-                </div>
-                <figure>
-                    <img src="images/animal/cardeal.webp" alt="trip01" />
-                </figure>
-            </div>
-        </section>
-        <section>
-            <div class="biogrid">
-                <div>
-                    <h2>Azulão</h2>
-                    <p><strong>Nome Botânico:</strong> Tabebuia chrysotricha Standl</p>
-                    <p><strong>Nomes Populares:</strong> ipê amarelo</p>
-                    <p><strong>Família:</strong> Família Bignoniaceae</p>
-                    <p>
-                        <strong>Origem:</strong> Brasil, nos estados do Espírito Santo até
-                        o sul do país
-                    </p>
-                    <p>
-                        Uma das árvores mais bonitas em paisagismo urbano pela sua bela e
-                        exuberante floração. Pode ser cultivada nas ruas e parques e
-                        também em jardins empresariais, para condomínios e residências,
-                        com grande sucesso ornamentalip amarelo. No planejamento de
-                        jardins é preciso não esquecer que sua floração dura pouco tempo,
-                        e seu uso como atração principal na primavera deve ter boa
-                        combinação com as outras plantas.
-                    </p>
-                </div>
-                <figure>
-                    <img src="images/animal/azulao.webp" alt="trip01" />
-                </figure>
-            </div>
-        </section>
-        <section>
-            <div class="biogrid">
-                <div>
-                    <h2>Canário da Terra (Chapinha)</h2>
-                    <p><strong>Nome Botânico:</strong> Tabebuia chrysotricha Standl</p>
-                    <p><strong>Nomes Populares:</strong> ipê amarelo</p>
-                    <p><strong>Família:</strong> Família Bignoniaceae</p>
-                    <p>
-                        <strong>Origem:</strong> Brasil, nos estados do Espírito Santo até
-                        o sul do país
-                    </p>
-                    <p>
-                        Uma das árvores mais bonitas em paisagismo urbano pela sua bela e
-                        exuberante floração. Pode ser cultivada nas ruas e parques e
-                        também em jardins empresariais, para condomínios e residências,
-                        com grande sucesso ornamentalip amarelo. No planejamento de
-                        jardins é preciso não esquecer que sua floração dura pouco tempo,
-                        e seu uso como atração principal na primavera deve ter boa
-                        combinação com as outras plantas.
-                    </p>
-                </div>
-                <figure>
-                    <img src="images/animal/canariodaterra.webp" alt="trip01" />
-                </figure>
-            </div>
-        </section>
+      </section>
+
+      <section>
+        <div class="biogrid">
+          <div>
+            <h2>Cardeal (Galo da Campina)</h2>
+            <p><strong>Nome Científico:</strong> *Paroaria dominicana*</p>
+            <p><strong>Nomes Populares:</strong> Cardeal-do-Nordeste</p>
+            <p><strong>Família:</strong> Thraupidae</p>
+            <p>
+              Com sua característica cabeça vermelha e corpo cinza, o Cardeal é
+              comum em áreas abertas do Cerrado. Sua dieta é composta
+              principalmente por sementes e grãos.
+            </p>
+          </div>
+          <figure>
+            <img
+              src="images/animal/cardeal.webp"
+              alt="Pássaro Cardeal no Cerrado"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="biogrid">
+          <div>
+            <h2>Azulão</h2>
+            <p><strong>Nome Científico:</strong> *Cyanocompsa brissonii*</p>
+            <p><strong>Nomes Populares:</strong> Azulão-verdadeiro</p>
+            <p><strong>Família:</strong> Cardinalidae</p>
+            <p>
+              O Azulão é admirado pela intensa cor azul de sua plumagem. Habita
+              bordas de matas e cerrados, sendo um excelente cantor. Sua
+              alimentação consiste em sementes e insetos.
+            </p>
+          </div>
+          <figure>
+            <img
+              src="images/animal/azulao.webp"
+              alt="Pássaro Azulão no Cerrado"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <div class="biogrid">
+          <div>
+            <h2>Canário da Terra (Chapinha)</h2>
+            <p><strong>Nome Científico:</strong> *Sicalis flaveola*</p>
+            <p>
+              <strong>Nomes Populares:</strong> Chapinha,
+              Canário-da-terra-verdadeiro
+            </p>
+            <p><strong>Família:</strong> Thraupidae</p>
+            <p>
+              Pássaro conhecido pelo seu amarelo-brilhante e pelo seu canto
+              melodioso. É frequentemente visto em campos abertos e áreas de
+              pastagem no Cerrado.
+            </p>
+          </div>
+          <figure>
+            <img
+              src="images/animal/canariodaterra.webp"
+              alt="Pássaro Canário da Terra no Cerrado"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
     </main>
     <footer>
+<<<<<<< HEAD
         <p>
             <span id="currentYear"></span> Sandro Ribeiro - Minas Gerais - Brazil
         </p>
@@ -155,7 +166,15 @@
         <p class="highlight" id="lastModified">
             Last Modification: 01/01/1970 12:00:00
         </p>
+=======
+      <p>
+        <span id="currentYear"></span> Sandro Ribeiro - Minas Gerais - Brazil
+      </p>
+      <p><a href="references.html">Citations and References</a></p>
+      <p class="highlight" id="lastModified">
+        Last Modification: 01/01/1970 12:00:00
+      </p>
+>>>>>>> 392882a76e2ad71272916b2085235f556f83d6a6
     </footer>
-</body>
-
+  </body>
 </html>

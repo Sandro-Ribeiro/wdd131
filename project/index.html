@@ -20,9 +20,21 @@
   </head>
   <body>
     <header>
-      <img src="./images/logos/logo-large.webp" alt="Logo from site - Coisas do Cerrado" />
-      <button id="menu-toggle" aria-expanded="false" aria-label="Open Navigation Menu">
-        &#9776; </button>
+      <picture>
+        <source
+          media="(max-width: 749px)"
+          srcset="./images/logos/Logo-small.webp"
+        />
+
+        <img src="./images/logos/Logo-large-line.webp" alt="logo" />
+      </picture>
+      <button
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-label="Open Navigation Menu"
+      >
+        &#9776;
+      </button>
       <nav id="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>

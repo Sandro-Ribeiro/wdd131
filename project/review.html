@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Coisas do Cerrado</title>
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals - W06 Project - Sandro Ribeiro" />
+    <meta
+      name="description"
+      content="WDD 131 Dynamic Web Fundamentals - W06 Project - Sandro Ribeiro"
+    />
     <meta name="author" content="Sandro Ribeiro" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Great+Vibes&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/coisasdocerrado.css" />
     <script defer src="scripts/review.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="./images/logos/logo-large.webp" alt="Logo from site - Coisas do Cerrado" />
-        <button id="menu-toggle" aria-expanded="false" aria-label="Open Navigation Menu">
-            ☰ </button>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Biodiversity</a>
-                    <ul class="dropdown-content">
-                        <li><a href="plant-diversity.html">Plants</a></li>
-                        <li><a href="animal-diversity.html">Animals</a></li>
-                    </ul>
-                </li>
-                <li><a href="economy.html">Economic</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+      <picture>
+        <source
+          media="(max-width: 749px)"
+          srcset="./images/logos/Logo-small.webp"
+        />
+
+        <img
+          src="./images/logos/Logo-large-line.webp"
+          alt="Logo Coisas do Cerrado"
+          loading="lazy"
+        />
+      </picture>
+      <button
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-label="Open Navigation Menu"
+      >
+        ☰
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Biodiversity</a>
+            <ul class="dropdown-content">
+              <li><a href="plant-diversity.html">Plants</a></li>
+              <li><a href="animal-diversity.html">Animals</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="economy.html">Economic</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <aside></aside>
     <main>
-        <h1>Thank You!</h1>
-        <p>Your message has been submitted successfully.</p>
-        <p>You have submitted the contact form <span id="submission-count">0</span> time(s).</p>
-        <p>We appreciate your feedback!</p>
+      <h1>Thank You!</h1>
+      <p>Your message has been submitted successfully.</p>
+      <p>
+        You have submitted the contact form
+        <span id="submission-count">0</span> time(s).
+      </p>
+      <p>We appreciate your feedback!</p>
     </main>
     <footer>
+<<<<<<< HEAD
         <p>
             <span id="currentYear"></span> Sandro Ribeiro - Minas Gerais - Brazil
         </p>
@@ -50,6 +74,14 @@
         <p class="highlight" id="lastModified">
             Last Modification: 01/01/1970 12:00:00
         </p>
+=======
+      <p>
+        <span id="currentYear"></span> Sandro Ribeiro - Minas Gerais - Brazil
+      </p>
+      <p class="highlight" id="lastModified">
+        Last Modification: 01/01/1970 12:00:00
+      </p>
+>>>>>>> 392882a76e2ad71272916b2085235f556f83d6a6
     </footer>
-</body>
+  </body>
 </html>
